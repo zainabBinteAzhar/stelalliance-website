@@ -1,57 +1,71 @@
-.v-container .hero-image-container{
-    border: 8px solid rgba(224, 215, 215, 0.93);
+.f-wrapper {
+  background-color: var(--bgColor);
 }
-/*for both left and right div*/
-.v-container>div{
-    flex:1 /*both will have equal width*/
+/* .f-container{
+    flex-direction: row;
+} */
+
+.accordionItem {
+  background: var(--bgColor);
+  border: 1.5px solid var(--tertiary);
+  border-radius: 5rem 7rem 4rem 5rem;
+  border-bottom: 0px;
+  border-right: 0.5px solid var(--tertiary);
+  box-shadow: 0px 0px 10px var(--boxShadow);
+  overflow: hidden;
+}
+.accordionItem.expanded {
+    border: 1.5px solid var(--tertiary);
+    border-radius: 5rem 7rem 0rem 0rem;
+    box-shadow: 0px 0px 10px var(--boxShadow);
+    border-bottom: 0px;
+    border-right: 0.5px solid var(--tertiary);
+    padding: 0.7rem 2rem 1rem 2rem;
 }
 
-.v-right{
-    gap:0.5rem;
+
+.accordion-item-wrapper.left {
+  float: left;
+  margin-right: 20px;
 }
 
-.accordion{
-    margin: top 2rem;
-    border:none;
+.accordion-item-wrapper.right {
+  float: right;
+  margin-left: 20px;
 }
-.accordionItem{
-    background:white;
-    border: 8px solid rgba(128, 128, 128, 0.143);
-    border-radius:8px;
-    overflow: hidden;
-    margin-bottom: 20px;/*add some distance*/
-}
-.accordionItem.expanded{
-    box-shadow: var(--shadow);
-    border-radius: 6px;
-}
-.accordionButton{
-    background: white;
-    padding: 1rem;
-    width: 100%;
-    justify-content:space-between;
-    cursor: pointer;
-}
-.icon{
-    padding:10px;
-    background: #eeeeff;
-    border-radius: 5px;
-}
-.icon svg{
-    fill:var(--blue);
+.accordionItem.expanded .accordionButton .heading {
+  color: var(--tertiary);
 }
 
-.accordionButton .primaryText{
-    font-size: 1.1rem;
+.accordionButton {
+  background: var(--bgColor);
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-@media (max-width: 1024px){
-    .v-container{
-        flex-direction: column;
-    }
-    @media (max-width: 768px){
-        .accordionButton .primaryText{
-            font-size: 1rem;
-        }
-    }
+.accordionButton .heading {
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.detail {
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.accordion-item-wrapper {
+  width: 45%; 
+  margin: 10px; 
+}
+
+@media (max-width: 1024px) {
+  .f-container {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+   
+  }
 }

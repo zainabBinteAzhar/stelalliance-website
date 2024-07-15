@@ -1,5 +1,5 @@
 .hero-wrapper {
-  background-color: rgb(26, 26, 26);
+  background-color: var(--bgColor);
   position: relative;
   padding-bottom: 2rem;
   min-height: 100vh;
@@ -13,7 +13,7 @@
 }
 .hero-title {
   position: absolute;
-  color: #ffbd1f;
+  color: var(--tertiary);
   top:  180px;
   margin-bottom: -50px;
   left: 15%;
@@ -28,7 +28,7 @@
   position: relative;
   left: 55%; /* match the left offset of the hero title */
   z-index: 2; /* ensure the slideshow is on top of the hero wrapper */
-  color:white;
+  color:var(--primary);
   font-weight: 700;
   font-size: 4rem;
 }
@@ -53,5 +53,5 @@
   font-weight: 400;
 }
 .hero-stat-item > :nth-child(1) {
-  color: orange;
+  color: var(--tertiary);
 }

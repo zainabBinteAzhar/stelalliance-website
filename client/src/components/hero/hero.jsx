@@ -6,7 +6,7 @@ const Hero = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
-  const h2Texts = ["DEVELOPE", "DEPLOY", "MANAGE"];
+  const h2Texts = ["DEVELOP", "DEPLOY", "MANAGE"];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
