@@ -31,7 +31,7 @@ const Header = () => {
       <div className="flexCenter Paddings innerWidth h-container">
         <div className="h-gradient" />
         <Link to="/">
-          <img src="./logo.png" alt="logo" width={200} />
+          <img className="headerImg" src="./logo.png" alt="logo" />
         </Link>
 
         <div className="flexCenter h-menu">
@@ -51,11 +51,9 @@ const Header = () => {
             More
           </NavLink>
         </div>
-        <div>
           <button className="flexCenter button">
-            <a href="">Get Started</a>
+            <Link to="/Contact">Get Started</Link>
           </button>
-        </div>
       </div>
     </section>
   );

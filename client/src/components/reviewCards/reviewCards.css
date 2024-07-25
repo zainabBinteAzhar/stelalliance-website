@@ -1,0 +1,73 @@
+.rCard {
+  height: 350px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: 40px 1fr 90px;
+  flex-direction: column;
+  background-color: var(--bgColor);
+}
+
+.head {
+  grid-row: 1;
+  width: 100%;
+  display: flex;
+}
+
+.rNumber {
+  margin-left: 7px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.rCompanyName {
+  color: var(--primary);
+  font-size: x-small;
+  font-weight: 400;
+  margin-left: auto;
+}
+
+.rReview {
+  grid-row: 2;
+  align-self: center;
+  margin-top: 30px;
+  color: var(--secondary);
+  font-size: small;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.rPerson {
+  grid-row: 3;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rPersonImage {
+  border: 1px solid var(--tertiary);
+  border-radius: 2rem 2rem 2rem 5rem;
+  width: 40px;
+  height: max-content;
+}
+
+.rPersonDetail {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rPersonName {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.rPersonTitle {
+  color: var(--secondary);
+  font-size: x-small;
+}
+
+/* hover effect on the whole card when cursor is placed over it */
+.rCard:hover {
+  box-shadow: 2px 2px 2px 0px var(--tertiary);
+}

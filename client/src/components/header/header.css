@@ -14,6 +14,12 @@
   z-index: 1;
   pointer-events: none;
 }
+.headerImg{
+  width:200px;
+}
+.headerImg:hover{
+  transform: scale(1.058);
+}
 
 .h-container {
   padding-top: 1rem;

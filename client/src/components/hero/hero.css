@@ -55,3 +55,8 @@
 .hero-stat-item > :nth-child(1) {
   color: var(--tertiary);
 }
+
+.text{
+  font-size: small;
+  color: var(--secondary);
+}

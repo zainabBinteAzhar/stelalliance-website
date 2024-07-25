@@ -1,0 +1,9 @@
+.software-wrapper {
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+  .software-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

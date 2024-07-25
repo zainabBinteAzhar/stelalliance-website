@@ -1,0 +1,85 @@
+.reviews-wrapper {
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.og1 {
+  width: 4rem;
+  height: 4rem;
+  filter: blur(40px);
+  border-radius: 50px;
+  margin-left: 10%;
+  margin-bottom: -90px;
+  margin-top: -50px;
+}
+.left-reviews,
+.right-reviews {
+  margin-top: 7%;
+}
+
+.right-reviews {
+  flex-basis: 64%;
+}
+
+.reviews-container {
+  position: relative;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s;
+}
+
+.projects > * {
+  width: calc(50% - 10px); 
+  flex-shrink: 0;
+  margin-left:20px;
+  margin-right:-30%;
+}
+
+.projects > *:nth-child(1) {
+  transform: translateX(0);
+}
+
+.projects > *:nth-child(2) {
+  transform: translateX(100%);
+}
+
+.projects > *:nth-child(3) {
+  transform: translateX(200%);
+}
+
+
+.left-reviews {
+  flex-basis: 34%;
+  margin-top: 17%;
+
+}
+.ratings{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 23px;
+}
+.ratings2 img, .ratings2 .rNumber {
+  vertical-align: middle;
+}
+
+.ratings1{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.platName{
+  color:var(--secondary);
+  font-size: 0.6rem;
+  font-weight:1px;
+}
+

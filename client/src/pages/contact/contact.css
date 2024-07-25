@@ -1,0 +1,136 @@
+/* contact.css */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  margin-right: -50%;
+  height: 100vh;
+  width: 75%;
+  background-color: var(--bgColor);
+  padding: 20px;
+  border-radius: 80px 10px 10px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 5px solid var(--tertiary);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--tertiary);
+}
+
+.close-button:hover {
+  color: var(--primary);
+}
+
+.content {
+  margin-top: 20px;
+  margin-left: 60px;
+  overflow: auto;
+}
+.content h1 {
+  color: var(--tertiary);
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.content .qs {
+  color: var(--secondary);
+  font-size: x-small;
+}
+.email {
+  color: var(--primary);
+}
+.email :nth-child(2) {
+  color: var(--tertiary);
+}
+
+.nameField {
+  color: var(--primary);
+  font-size: smaller;
+}
+.inputField {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px 30px 10px 10px;
+  height: 2.5rem;
+  width: 95%;
+  padding-left: 10px;
+  font-style: italic;
+  font-size: x-small;
+  background-color: var(--black);
+  border: var(--black);
+  color: var(--primary);
+}
+.inputField:active {
+  border-color: var(--tertiary);
+}
+.endContent {
+  margin-left: 15px;
+  margin-top: -30px;
+}
+
+.msgField {
+  padding-top: 20px;
+  padding-left: 30px;
+  height: 7rem;
+  width: 40rem;
+}
+.leftDiv {
+  margin-top: 7px;
+  display: inline-block;
+  width: 39%;
+  padding-left: 10px;
+  vertical-align: top;
+}
+.othersDiv {
+  margin-top: -15px;
+  width: 80%;
+  padding-left: 10px;
+}
+.msgDiv {
+  margin-top: -15px;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.rightDiv {
+  margin-top: 7px;
+  display: inline-block;
+  width: 39%;
+  vertical-align: top;
+}
+
+.r2 {
+  margin-top: -40px;
+  float: right;
+}
+.rightDiv.r2 button[type="submit"] {
+  margin-bottom: 5px; /* add some margin bottom to the button */
+}
+.resultSpan{
+  display: block; /* make the span a block element */
+  margin-top: 0;
+  color: var(--tertiary);
+  font-size: small;
+}
+

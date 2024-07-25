@@ -1,71 +1,64 @@
-.f-wrapper {
-  background-color: var(--bgColor);
+.faqs-wrapper{
+  flex-direction: column;
+  margin-bottom: 70px;
 }
-/* .f-container{
-    flex-direction: row;
-} */
+.faqs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-.accordionItem {
-  background: var(--bgColor);
+.left-faqs,.right-faqs {
+  flex-basis: 48%;
+  color:var(--secondary);
+  z-index:1;
+}
+
+.faq {
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.faq-question {
+  
+  border-radius: 10px 30px 10px 10px;
   border: 1.5px solid var(--tertiary);
-  border-radius: 5rem 7rem 4rem 5rem;
   border-bottom: 0px;
   border-right: 0.5px solid var(--tertiary);
   box-shadow: 0px 0px 10px var(--boxShadow);
-  overflow: hidden;
-}
-.accordionItem.expanded {
-    border: 1.5px solid var(--tertiary);
-    border-radius: 5rem 7rem 0rem 0rem;
-    box-shadow: 0px 0px 10px var(--boxShadow);
-    border-bottom: 0px;
-    border-right: 0.5px solid var(--tertiary);
-    padding: 0.7rem 2rem 1rem 2rem;
-}
-
-
-.accordion-item-wrapper.left {
-  float: left;
-  margin-right: 20px;
-}
-
-.accordion-item-wrapper.right {
-  float: right;
-  margin-left: 20px;
-}
-.accordionItem.expanded .accordionButton .heading {
-  color: var(--tertiary);
-}
-
-.accordionButton {
-  background: var(--bgColor);
-  padding: 1rem;
-  width: 100%;
-  justify-content: space-between;
+  background-color: var(--bgColor);
+  padding: 20px;
   cursor: pointer;
 }
 
-.accordionButton .heading {
-  color: var(--secondary);
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-.detail {
-  color: var(--secondary);
-  font-size: 0.7rem;
-  font-weight: 400;
+.faq-question.open {
+  border-radius: 10px 30px 0px 0px;
+  background-color: var(--bgColor);
+  color: var(--tertiary);
 }
 
-.accordion-item-wrapper {
-  width: 45%; 
-  margin: 10px; 
+.faq-answer {
+  margin-top: -20px;
+  padding: 15px;
+  background-color: var(--bgColor);
+  border-radius: 0px 0px 10px 10px;
+
+  border: 1.5px solid var(--tertiary);
+  border-top:0px;
+  border-bottom: 0px;
+  border-right: 0.5px solid var(--tertiary);
 }
 
-@media (max-width: 1024px) {
-  .f-container {
-    flex-direction: column;
-  }
-  @media (max-width: 768px) {
-   
-  }
+.faq-answer.open {
+  display: block;
+}
+
+.fas {
+  float: right;
+  margin-top: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fas.open {
+  transform: rotate(180deg);
 }

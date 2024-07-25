@@ -37,33 +37,33 @@ const Hero = () => {
         <div className="flexCenter hero-stat">
           <div className="flexColCenter hero-stat-item">
             <span>
-              <CountUp start={30} end={80} duration={2} />
-              <span> +</span>
+              <CountUp end={80} duration={4} />
+              <span>+</span>
             </span>
-            <span className="secondaryText">Client Partnerships</span>
+            <span className="text">Client Partnerships</span>
           </div>
 
           <div className="flexColCenter hero-stat-item">
             <span>
-              <CountUp end={20} />
-              <span>M +</span>
+              <CountUp end={20} duration={7}  />
+              <span>M+</span>
             </span>
-            <span className="secondaryText">Lines of Code</span>
+            <span className="text">Lines of Code</span>
           </div>
           <div className="flexColCenter hero-stat-item">
             <span>
-              <CountUp end={70} />
-              <span> +</span>
+              <CountUp end={70} duration={5}  />
+              <span>+</span>
             </span>
-            <span className="secondaryText">Successful Deliveries</span>
+            <span className="text">Successful Deliveries</span>
           </div>
           <div className="flexColCenter hero-stat-item">
             <span>
               <span>$</span>
-              <CountUp end={30} />
-              <span>M +</span>
+              <CountUp end={30} duration={6} />
+              <span>M+</span>
             </span>
-            <span className="secondaryText">Raised by Partners</span>
+            <span className="text">Raised by Partners</span>
           </div>
         </div>
       </div>
